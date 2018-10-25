@@ -10,6 +10,6 @@
   "learning_rate_decay": 0.1,
   "learning_rate_decay_step": 20,
   "gradient_clipping": 0.5,
-  "train_set": "291",
-  "validation_set": "Set5"
+  "train_set": "TRAIN_images",
+  "validation_set": "TEST_images"
 }

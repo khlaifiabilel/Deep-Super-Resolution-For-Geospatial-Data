@@ -1,16 +1,17 @@
 import data
-import predict
+import predict2
 import numpy as np
 import tensorflow as tf
 
 
 with tf.Session() as session:
-    network = predict.load_model(session)
+    network = predict2.load_model(session)
 
-    for set_name in ['Set5', 'Set14', 'B100', 'Urban100']:
-        for scaling_factor in [2, 3, 4]:
+    for set_name in ['val_images_544']:
+        for scaling_factor in [2,4,8]:
             dataset = data.TestSet(set_name, scaling_factors=[scaling_factor])
-            predictions, psnr = predict.predict(dataset.images, session, network, targets=dataset.targets,
-                                                border=scaling_factor)
+            predictions, psnr, ssim = predict2.predict(dataset.images, session, network, targets=dataset.targets,
+                                                border=int(scaling_factor))
 
             print('Dataset "%s", scaling factor = %d. Mean PSNR = %.2f.' % (set_name, scaling_factor, np.mean(psnr)))
+            print("SSIM:",np.mean(ssim))
