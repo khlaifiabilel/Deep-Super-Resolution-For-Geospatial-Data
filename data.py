@@ -4,10 +4,9 @@ import numpy as np
 import math
 import cv2
 from tqdm import tqdm
-
 from scipy import misc
 from skimage import color
-from urllib.request import urlretrieve
+
 
 
 DATA_PATH = "/Set/To/Data/Path"
@@ -20,7 +19,7 @@ class TrainSet:
         self.scaling_factors = scaling_factors
         self.images_completed = 0
         self.epochs_completed = 0
-        self.root_path = os.path.join(DATA_PATH, 'TRAIN_SUBSET', self.benchmark)
+        self.root_path = os.path.join(DATA_PATH, self.benchmark)
         self.images = []
         self.targets = []
 
@@ -118,7 +117,7 @@ class TestSet:
         self.benchmark = benchmark
         self.scaling_factors = scaling_factors
         self.images_completed = 0
-        self.root_path = os.path.join(DATA_PATH, 'TEST', self.benchmark)
+        self.root_path = os.path.join(DATA_PATH, self.benchmark)
         self.file_names = os.listdir(self.root_path)
         self.images = []
         self.targets = []
