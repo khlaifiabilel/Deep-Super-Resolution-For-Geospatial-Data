@@ -49,7 +49,7 @@ If you have massive images they may need to be tiled into smaller chunks to make
 
 ##### Time to train
 
-	    python3 train.py
+	python3 train.py
 
 ____
 
@@ -65,8 +65,8 @@ Edit the set_name and scaling_factors.  The set_name should again be a subdirect
 
 Here we will use either Create_SR.py or Create_SR_NoGEO.py.  If you have geospatial information saved in your imagery, I would recommend Create_SR to maintain it.  Our input here is different than our previous two tasks.  If you have a model built to super-resolve imagery to 30cm, you should input 60cm imagery for a 2x enhancement, 120cm for a 4x, and 240cm for an 8x.  Run a command similar to the one below:
 
-	   python3 Create_SR.py "input/60cmdata/" "/output/30cmSRdata/" 2
-    python3 Create_SR_NoGEO.py "input/120cmdata/" "/output/30cmSRdata/" 4
+	python3 Create_SR.py "input/60cmdata/" "/output/30cmSRdata/" 2
+	python3 Create_SR_NoGEO.py "input/120cmdata/" "/output/30cmSRdata/" 4
     
 ### 4.  Optionally stitch and add georeferencing
 
