@@ -84,6 +84,33 @@ Check out our 8-bit conversion code. -TBA
 [Random Forest Super-Resolution](github.com/jshermeyer/RFSR) is a partner repository and also used in the the arXiv paper listed above.
 Some sample WorldView-3 satellite data can also be found [here.](https://github.com/jshermeyer/RFSR/tree/master/SampleImagery)
 
+
+### 6. More Examples
+
+| 120cm Input | 30cm SR Output |
+| --- | --- |
+|<img src="/Examples/VDSR/Plane/120cm_Native.png" alt="60cm_Native" width="400"/>|<img src="/Examples/VDSR/Plane/30cm_4x_VDSR.png" alt="30cm_Native" width="400"/>|
+
+| 30cm Input | 15cm SR Output |
+| --- | --- |
+|<img src="/Examples/VDSR/Plane/30cm_Native.png" alt="30cm_Native" width="400"/>|<img src="/Examples/VDSR/Plane/15cm_2x_VDSR.png" alt="15cm_SR" width="400"/>|
+
+| 120cm Input | 60cm SR Output |
+| --- | --- |
+|<img src="/Examples/VDSR/Cars/120cm_Native.png" alt="60cm_Native" width="400"/>|<img src="/Examples/VDSR/Cars/60cm_VDSR_2x.png" alt="30cm_Native" width="400"/>|
+
+| 120cm Input | 30cm SR Output |
+| --- | --- |
+|<img src="/Examples/VDSR/Cars/120cm_Native.png" alt="60cm_Native" width="400"/>|<img src="/Examples/VDSR/Cars/30cm_VDSR_4x.png" alt="30cm_Native" width="400"/>|
+
+| 60cm Input | 30cm SR Output |
+| --- | --- |
+|<img src="/Examples/VDSR/Cars/60cm_Native.png" alt="60cm_Native" width="400"/>|<img src="/Examples/VDSR/Cars/30cm_VDSR_2x.png" alt="30cm_Native" width="400"/>|
+
+| 30cm Input | 15cm SR Output |
+| --- | --- |
+|<img src="/Examples/VDSR/Cars/30cm_Native.png" alt="30cm_Native" width="400"/>|<img src="/Examples/VDSR/Cars/15cm_VDSR_2x.png" alt="30cm_Native" width="400"/>|
+
     
     
     
