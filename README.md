@@ -79,10 +79,13 @@ Again, if you have tiled data, you can use our stitcher and georeferencing code 
 
 ### 5. Other Resources
 
-Check out our 8-bit conversion code. -TBA
-[SpaceNet Utilities](https://github.com/SpaceNetChallenge/utilities) is a recommended toolkit for working with geospatial data and deep learning
-[Random Forest Super-Resolution](github.com/jshermeyer/RFSR) is a partner repository and also used in the the arXiv paper listed above.
-Some sample WorldView-3 satellite data can also be found [here.](https://github.com/jshermeyer/RFSR/tree/master/SampleImagery)
+-Check out our 8-bit conversion code. -TBA
+
+-[SpaceNet Utilities](https://github.com/SpaceNetChallenge/utilities) is a recommended toolkit for working with geospatial data and deep learning
+
+-[Random Forest Super-Resolution](github.com/jshermeyer/RFSR) is a partner repository and also used in the the arXiv paper listed above.
+
+-Some sample WorldView-3 satellite data can also be found [here.](https://github.com/jshermeyer/RFSR/tree/master/SampleImagery)
 
 
 ### 6. More Examples
