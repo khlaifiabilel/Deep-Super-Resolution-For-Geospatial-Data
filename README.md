@@ -99,13 +99,13 @@ Some sample WorldView-3 satellite data can also be found [here.](https://github.
 | --- | --- |
 |<img src="/Examples/VDSR/Cars/120cm_Native.png" alt="60cm_Native" width="400"/>|<img src="/Examples/VDSR/Cars/60cm_VDSR_2x.png" alt="30cm_Native" width="400"/>|
 
-| 120cm Input | 30cm SR Output |
-| --- | --- |
-|<img src="/Examples/VDSR/Cars/120cm_Native.png" alt="60cm_Native" width="400"/>|<img src="/Examples/VDSR/Cars/30cm_VDSR_4x.png" alt="30cm_Native" width="400"/>|
-
 | 60cm Input | 30cm SR Output |
 | --- | --- |
 |<img src="/Examples/VDSR/Cars/60cm_Native.png" alt="60cm_Native" width="400"/>|<img src="/Examples/VDSR/Cars/30cm_VDSR_2x.png" alt="30cm_Native" width="400"/>|
+
+| 120cm Input | 30cm SR Output |
+| --- | --- |
+|<img src="/Examples/VDSR/Cars/120cm_Native.png" alt="60cm_Native" width="400"/>|<img src="/Examples/VDSR/Cars/30cm_VDSR_4x.png" alt="30cm_Native" width="400"/>|
 
 | 30cm Input | 15cm SR Output |
 | --- | --- |
