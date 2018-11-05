@@ -49,7 +49,7 @@ Specify the folder names of your training and validation/test set ("train_set" a
 The validation set can be a smaller subset of your total imagery dataset.  For training I would recommend a subset of imagery not much larger the 0.5GB.  With augmentation, conversion to floating point, and generation of tensors, a dataset this large can get quite memory intensive. On an NVIDIA Titan X with this much data, training can take about 55 hours.  With less data, training will naturally be shorter, but results may be worse.
 
 ##### Big images?
-If you have massive images they may need to be tiled into smaller chunks to make your GPU happy.  This will remove the geospatial information, but fear not!  We have code to stitch these images back together after you run inference, and add accurate geospatial info back as well.  Check out our tiler, stitcher and georeferencing package here: TBA
+If you have massive images they may need to be tiled into smaller chunks to make your GPU happy.  This will remove the geospatial information, but fear not!  We have code to stitch these images back together after you run inference, and add accurate geospatial info back as well.  Check out our tiler, stitcher and georeferencing package here: https://github.com/jshermeyer/SR_Utils
 
 ##### Time to train
 
@@ -74,12 +74,12 @@ Here we will use either Create_SR.py or Create_SR_NoGEO.py.  If you have georefe
     
 ### 4.  Optionally stitch and add georeferencing
 
-Again, if you have tiled data, you can use our stitcher and georeferencing code found here: TBA
+Again, if you have tiled data, you can use our stitcher and georeferencing code found here: https://github.com/jshermeyer/SR_Utils
 
 
 ### 5. Other Resources
 
--Check out our 8-bit conversion code. -TBA
+-Check out our 8-bit conversion code. https://github.com/jshermeyer/SR_Utils
 
 -[SpaceNet Utilities](https://github.com/SpaceNetChallenge/utilities) is a recommended toolkit for working with geospatial data and deep learning
 
