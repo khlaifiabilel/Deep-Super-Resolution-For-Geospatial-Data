@@ -9,9 +9,9 @@ VDSR4Geo is a tensorFlow implementation of "Accurate Image Super-Resolution Usin
 ### For more information, see:
 
 
-Initial blog on Super-Resolution: TBA November 2019
+Initial blog on Super-Resolution: [Blog](https://medium.com/the-downlinq/super-resolution-and-object-detection-a-love-story-part-1a-2f1e962e99dd)
 
-arXiv paper: TBA November 2019
+arXiv paper: [Shermeyer & Van Etten, 2018](https://arxiv.org/abs/1812.04098)
 
 VDSR original paper: [Kim et al. 2016](https://arxiv.org/pdf/1511.04587.pdf)
 
