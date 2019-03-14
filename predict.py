@@ -63,7 +63,7 @@ def predict(images, session=None, network=None, targets=None, border=0):
                 target_y = color.rgb2ycbcr(targets[i])[:, :, 0]
             else:
                 target_y = targets[i].copy()
-                
+
             psnr_calc=utils.psnr(prediction[border:-border, border:-border, 0],
                                    target_y[border:-border, border:-border], maximum=255.0)
             #print(psnr_calc)
@@ -71,10 +71,10 @@ def predict(images, session=None, network=None, targets=None, border=0):
             psnr.append(psnr_calc)
             ssim.append(compare_ssim(target_y[border:-border, border:-border], prediction[border:-border, border:-border, 0], data_range=prediction.max() - prediction.min()))
 
-        #if len(image.shape) == 3:
-            #prediction = color.ycbcr2rgb(np.concatenate((prediction, image_ycbcr[:, :, 1:3]), axis=2)) * 255
-        #else:
-            #prediction = prediction[:, :, 0]
+        if len(image.shape) == 3:
+            prediction = color.ycbcr2rgb(np.concatenate((prediction, image_ycbcr[:, :, 1:3]), axis=2)) * 255
+        else:
+            prediction = prediction[:, :, 0]
 
         prediction = np.clip(prediction, 0, 255).astype(np.uint8)
         predictions.append(prediction)

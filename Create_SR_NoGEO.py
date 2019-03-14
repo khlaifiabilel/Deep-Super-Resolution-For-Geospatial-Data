@@ -2,23 +2,16 @@ import data
 import predict
 import numpy as np
 import tensorflow as tf
-from scipy import misc
-from skimage import color
 import os
 import sys
 import gdal
-import glob
 from tqdm import tqdm
 
-
 #python3 Create_SR_NoGEO.py "input/data/" "/output/data/" 2
-
 
 def SR_it(input_dir,output_dir,scaling_factor):
     base_dir=os.getcwd()
     file_names = []
-    projs=[]
-    geos=[]
     SF=scaling_factor
     if input_dir.endswith("/"):
         O=input_dir.split("/")[-2]
@@ -29,13 +22,10 @@ def SR_it(input_dir,output_dir,scaling_factor):
 
         driver = gdal.GetDriverByName("GTiff")
         os.chdir(input_dir)
-        images = glob.glob('*.tif')
-
-
         os.chdir(base_dir)
         if not os.path.exists(output_dir):
             os.mkdir(output_dir)
-        
+
         for file_name in tqdm(os.listdir(input_dir)):
                     file_names.append(file_name)
 
@@ -53,6 +43,6 @@ def SR_it(input_dir,output_dir,scaling_factor):
                     for i, image in enumerate(prediction, 1):
                         DataSet.GetRasterBand(i).WriteArray( image )
                     del DataSet
-                
+
 if __name__ == "__main__":
     SR_it(sys.argv[1],sys.argv[2],int(sys.argv[3]))
